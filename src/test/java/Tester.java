@@ -22,6 +22,8 @@ public class Tester
         WebForm webForm = new WebForm(driver);
         webForm.enterFirstName();
         webForm.enterLastName();
+        webForm.enterJobTitle();
+        webForm.setEducationLevelCollege();
         webForm.pressSubmitButton();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         webForm.verifyAlertSuccess();
