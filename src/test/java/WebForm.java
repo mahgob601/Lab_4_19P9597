@@ -4,8 +4,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class WebForm extends PageObject{
 
-    private final String FIRST_NAME = "First Name";
-    private final String LAST_NAME = "Last Name";
+    private final String FIRST_NAME = "Yassin";
+    private final String LAST_NAME = "Mahgoub";
 
     @FindBy(id = "first-name")
     private WebElement first_name;
