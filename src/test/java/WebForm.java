@@ -17,8 +17,14 @@ public class WebForm extends PageObject{
     @FindBy(id = "job-title")
     private WebElement job_title;
 
+    @FindBy(id = "radio-button-1")
+    private WebElement EducationLevelHighSchool;
+
     @FindBy(id = "radio-button-2")
     private WebElement EducationLevelCollege;
+
+    @FindBy(id = "radio-button-3")
+    private WebElement EducationLevelGrad;
 
     @FindBy(xpath = "//a[contains(text(),'Submit')]")
     private WebElement submit_button;
@@ -45,11 +51,26 @@ public class WebForm extends PageObject{
         this.job_title.sendKeys(JOB_TITLE);
     }
 
+    public void setEducationLevelHighSchool()
+    {
+        EducationLevelHighSchool.click();
+
+    }
+
     public void setEducationLevelCollege()
     {
         EducationLevelCollege.click();
 
     }
+
+    public void setEducationLevelGrad()
+    {
+        EducationLevelGrad.click();
+
+    }
+
+
+
 
     public void pressSubmitButton(){
         this.submit_button.click();

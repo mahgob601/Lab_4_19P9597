@@ -23,7 +23,9 @@ public class Tester
         webForm.enterFirstName();
         webForm.enterLastName();
         webForm.enterJobTitle();
+        webForm.setEducationLevelHighSchool();
         webForm.setEducationLevelCollege();
+        webForm.setEducationLevelGrad();
         webForm.pressSubmitButton();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         webForm.verifyAlertSuccess();
